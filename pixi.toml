@@ -1,0 +1,17 @@
+[workspace]
+authors = ["Gregory Tucker <gregory.tucker@ess.eu>"]
+channels = ["conda-forge"]
+name = "ess-ecdc-dev"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[activation.env]
+CONAN_USER_HOME="$HOME/Software/ess-ecdc-dev"
+
+[tasks]
+
+[dependencies]
+conan = "<2"
+cmake = "<4"
+c-compiler = ">=1.9.0,<2"
+cxx-compiler = ">=1.9.0,<2"
