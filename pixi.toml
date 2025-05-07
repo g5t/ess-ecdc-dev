@@ -13,5 +13,5 @@ CONAN_USER_HOME="$HOME/Software/ess-ecdc-dev"
 [dependencies]
 conan = "<2"
 cmake = "<4"
-c-compiler = ">=1.9.0,<2"
-cxx-compiler = ">=1.9.0,<2"
+c-compiler = "<1.7"
+cxx-compiler = "<1.7"
