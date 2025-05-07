@@ -1,5 +1,8 @@
 #!/bin/bash
 cc_version=$($CC -dumpversion)
+conan profile new default
+conan config init
+conan remote add ecdc-conan-release https://artifactory.esss.lu.se/artifactory/api/conan/ecdc-conan-release
 conan profile update settings.compiler=gcc default
 conan profile update settings.compiler.libcxx=libstdc++11 default
 conan profile update settings.compiler.version=${cc_version} default
