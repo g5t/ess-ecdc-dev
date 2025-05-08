@@ -3,3 +3,4 @@
 .pixi
 *.egg-info
 .conan/
+shell-hook.sh
