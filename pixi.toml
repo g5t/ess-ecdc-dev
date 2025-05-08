@@ -6,7 +6,7 @@ platforms = ["linux-64"]
 version = "0.1.0"
 
 [activation.env]
-CONAN_USER_HOME="$PWD"
+CONAN_USER_HOME="$PIXI_PROJECT_ROOT"
 
 [tasks]
 
@@ -18,3 +18,4 @@ cxx-compiler = "<1.7"
 libxcrypt = ">=4.4.36,<5"
 qt6-main = ">=6.9.0,<7"
 libgl-devel = ">=1.7.0,<2"
+mcstas = ">=3.5.27,<4"
